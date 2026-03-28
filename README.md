@@ -1,23 +1,23 @@
-# Job Scraper com Selenium
+# Job Scraper with Selenium
 
-Este projeto é um script em Python que utiliza Selenium para automatizar a busca e filtragem de vagas no site InfoJobs e salva os links das vagas encontradas em uma planilha Excel.
-
----
-
-## Funcionalidades
-
-- 🚀 Automatiza a abertura do site InfoJobs
-- 🍪 Aceita automaticamente o aviso de cookies
-- 🎯 Aplica filtros para vagas da área de Informática, TI e Telecomunicações
-- 👨‍🎓 Filtra vagas de nível estagiário
-- 🔗 Captura links das vagas encontradas na página
-- 💾 Salva os links coletados em uma planilha Excel (`vagas.xlsx`)
-- 🕒 Inclui um tempo de espera para garantir que os dados carreguem antes de salvar
-- (Opcional) Permite salvar a planilha em uma pasta específica na área de trabalho
+This project is a Python script that uses Selenium to automate job searching and filtering on the InfoJobs website and saves the collected job links into an Excel spreadsheet.
 
 ---
 
-## Tecnologias utilizadas
+## Features
+
+- Automates opening the InfoJobs website
+- Automatically accepts the cookie consent banner
+- Applies filters for jobs in the Information Technology and Telecommunications fields
+- Filters internship-level positions
+- Captures links from job listings on the page
+- Saves collected links into an Excel spreadsheet (`vagas.xlsx`)
+- Includes a wait time to ensure data loads before saving
+- (Optional) Allows saving the spreadsheet to a specific folder on the desktop
+
+---
+
+## Technologies Used
 
 - Python
 - Selenium
@@ -25,68 +25,68 @@ Este projeto é um script em Python que utiliza Selenium para automatizar a busc
 
 ---
 
-# 🛑 Aviso Legal
+# Legal Notice
 
-## Este projeto é exclusivamente para fins educacionais.
+## This project is for educational purposes only.
 
-- Não coleta dados pessoais ou sensíveis.
-- Não quebra captcha, autenticação ou outras barreiras de segurança.
-- Todos os dados coletados são públicos e acessíveis sem login.
-- O uso do código deve respeitar os Termos de Uso do InfoJobs.
-- Não utilize este script para fins comerciais ou alta escala sem permissão.
-
----
-
-# 🎓 Objetivo do projeto
-
-Este projeto foi criado como prática de:
-
-- Automação de tarefas com Selenium
-- Extração de dados públicos da web
-- Estruturação de dados com pandas
-- Geração de planilhas com Python
+- Does not collect personal or sensitive data
+- Does not bypass captcha, authentication, or other security measures
+- All collected data is public and accessible without login
+- Usage must comply with InfoJobs Terms of Service
+- Do not use this script for commercial or large-scale purposes without permission
 
 ---
 
-## Como usar
+# Project Objective
 
-1. Instale as dependências necessárias:
+This project was created as practice for:
+
+- Task automation with Selenium
+- Public web data extraction
+- Data structuring with pandas
+- Spreadsheet generation with Python
+
+---
+
+## How to Use
+
+1. Install the required dependencies:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
-1. Baixe o ChromeDriver compatível com a versão do seu Google Chrome e coloque-o no PATH ou na mesma pasta do script.
-2. Clone este repositório ou copie o script para sua máquina.
-3. Execute o script com:
+2. Download the ChromeDriver compatible with your Google Chrome version and place it in your PATH or in the same folder as the script.
+3. Clone this repository or copy the script to your machine.
+4. Run the script:
 
 ```bash
 python app.py
 ```
 
-Após a execução, uma planilha `vagas.xlsx` será criada na pasta do projeto (ou na pasta configurada no script).
+After execution, a `vagas.xlsx` file will be created in the project folder (or in the configured folder in the script).
 
 ---
 
-## Como funciona
+## How It Works
 
-- O script abre o navegador Chrome e acessa a página de vagas do InfoJobs para a região selecionada ( por padrão Rio de Janeiro ).
-- Aceita o aviso de cookies automaticamente.
-- Aplica filtros para mostrar vagas na área de TI e nível estagiário.
-- Coleta os links das vagas exibidas na página.
-- Salva os links em um arquivo Excel, evitando links duplicados.
-- Encerra o navegador após salvar a planilha.
-
----
-
-## Personalizações
-
-Você pode ajustar o filtro para outras áreas ou níveis hierárquicos alterando os seletores no código. Também pode modificar o local onde a planilha é salva alterando o código da função `salvar_planilha`.
+- The script opens the Chrome browser and accesses the InfoJobs job listings page for the selected region (default is Rio de Janeiro).
+- Automatically accepts the cookie consent.
+- Applies filters to show IT internship-level positions.
+- Collects job listing links displayed on the page.
+- Saves the links into an Excel file, avoiding duplicates.
+- Closes the browser after saving the spreadsheet.
 
 ---
 
-## Observações
+## Customization
 
-- É necessário ter o ChromeDriver instalado e compatível com a versão do seu navegador Chrome.
-- Caso o site InfoJobs altere o layout ou os seletores, o script pode precisar ser atualizado.
-- Esse script é um ponto de partida para coleta automatizada de vagas e pode ser expandido para extrair outras informações das vagas.
+You can adjust filters for other fields or job levels by modifying the selectors in the code. You can also change where the spreadsheet is saved by modifying the `salvar_planilha` function.
+
+---
+
+## Notes
+
+- ChromeDriver must be installed and compatible with your Chrome browser version.
+- If InfoJobs changes its layout or selectors, the script may need updates.
+- This script is a starting point for automated job scraping and can be expanded to extract additional job information.
